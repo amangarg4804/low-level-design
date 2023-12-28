@@ -4,11 +4,29 @@ public class Player {
     private String name;
     private String character;
 
+    public Player(PlayerBuilder playerBuilder) {
+        this.name = playerBuilder.getName();
+        this.character = playerBuilder.getCharacter();
+    }
+
     public String getName() {
         return name;
     }
 
-    public Player setName(String name) {
+    public String getCharacter() {
+        return character;
+    }
+
+}
+
+class PlayerBuilder{
+    private String name;
+    private String character;
+    public String getName() {
+        return name;
+    }
+
+    public PlayerBuilder setName(String name) {
         this.name = name;
         return this;
     }
@@ -17,14 +35,11 @@ public class Player {
         return character;
     }
 
-    public Player setCharacter(String character) {
+    public PlayerBuilder setCharacter(String character) {
         this.character = character;
         return this;
     }
-}
-
-class PlayerBuilder{
-    private String name;
-    private String character;
-    // TODO: complete
+    public Player build() {
+        return new Player(this);
+    }
 }

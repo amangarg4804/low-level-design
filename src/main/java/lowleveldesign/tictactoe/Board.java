@@ -20,11 +20,20 @@ public class Board {
     //A1    A2    A3
     //B1    B2    B3
     //C1    C2    C3
-    public void insert(String box, String character) {
+    public boolean insert(String box, String character) {
         int row = box.charAt(0) -'A';
         int col = box.charAt(1) -'1';
+        if(row >= boardSize || col >=boardSize) {
+            System.out.println("wrong box chosen");
+            return false;
+        }
+        if(!"_".equals(grid[row][col])) {
+            System.out.println("wrong box chosen");
+            return false;
+        }
         grid[row][col] = character;
         remaining--;
+        return true;
     }
 
     public void printBoard() {

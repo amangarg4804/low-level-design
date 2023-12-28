@@ -1,7 +1,5 @@
 package lowleveldesign.tictactoe;
 
-import java.security.PublicKey;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -17,12 +15,15 @@ public class Game {
         this.board = board;
     }
 
+
     public void play(Scanner sc) {
         while (gameState == GameState.IN_PROGRESS) {
             Player player = players.get(currentTurn);
             System.out.println("Player " +  player.getName() + "'s turn: ");
             String box = sc.next();
-            board.insert(box, player.getCharacter());
+            if(!board.insert(box, player.getCharacter())) {
+                continue;
+            }
             board.printBoard();
             if(isWinner(player)) {
                 gameState = GameState.END_WINNER;
