@@ -2,6 +2,7 @@ package lowleveldesign.patterns.protoype;
 
 public class Sparrow extends Bird {
 
+    private String legsSize;
     public Sparrow() {
 
     }
@@ -16,8 +17,15 @@ public class Sparrow extends Bird {
         return new Sparrow(this);
     }
 
+    public Sparrow setLegsSize(String legsSize) {
+        this.legsSize = legsSize;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return "Sparrow{} " + super.toString();
+        return "Sparrow{" +
+                "legsSize='" + legsSize + '\'' +
+                "} " + super.toString();
     }
 }

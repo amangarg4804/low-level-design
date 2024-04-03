@@ -19,6 +19,11 @@ public class Crow extends Bird{
         return crow;
     }
 
+    public Crow setSound(String sound) {
+        this.sound = sound;
+        return this;
+    }
+
     @Override
     public String toString() {
         return "Crow{" +
