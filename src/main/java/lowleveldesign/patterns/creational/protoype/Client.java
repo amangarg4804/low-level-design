@@ -1,6 +1,7 @@
 package lowleveldesign.patterns.creational.protoype;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Client {
@@ -26,8 +27,7 @@ public class Client {
         BirdRegistry br = new BirdRegistry();
         br.registerBird("sweetSoundCrow", sweetSoundCrow);
         br.registerBird("longLeggedSparrow", longLeggedSparrow);
-
-        List<String> getBirdsOfTypes = List.of("sweetSoundCrow", "sweetSoundCrow", "longLeggedSparrow");
+        List<String> getBirdsOfTypes = Arrays.asList("sweetSoundCrow", "sweetSoundCrow", "longLeggedSparrow");
 
         List<Bird> copyOfRequestedBirds = new ArrayList<>();
         getBirdsOfTypes.forEach(t -> copyOfRequestedBirds.add(br.get(t)));

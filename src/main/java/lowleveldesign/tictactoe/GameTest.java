@@ -1,5 +1,6 @@
 package lowleveldesign.tictactoe;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -40,7 +41,7 @@ public class GameTest {
         System.out.println("Choose board size: ");
         int boardSize = sc.nextInt();
         Board board = new Board(boardSize);
-        Game game = new Game(List.of(player1, player2), board);
+        Game game = new Game(Arrays.asList(player1, player2), board);
         game.play(sc);
     }
 }
