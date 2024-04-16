@@ -1,4 +1,4 @@
-package lowleveldesign.pen.strategy.write;
+package lowleveldesign.designproblems.pen.strategy.write;
 
 public class SmoothWriteBehaviour implements WriteBehaviour{
     @Override

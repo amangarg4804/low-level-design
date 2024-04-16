@@ -1,7 +1,6 @@
-package lowleveldesign.pen;
+package lowleveldesign.designproblems.pen;
 
-import lombok.Getter;
-import lowleveldesign.pen.strategy.write.WriteBehaviour;
+import lowleveldesign.designproblems.pen.strategy.write.WriteBehaviour;
 
 public abstract class Pen {
     private String name;

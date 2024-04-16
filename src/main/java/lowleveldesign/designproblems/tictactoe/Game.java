@@ -1,4 +1,4 @@
-package lowleveldesign.tictactoe;
+package lowleveldesign.designproblems.tictactoe;
 
 import java.util.List;
 import java.util.Scanner;
@@ -68,5 +68,6 @@ public class Game {
             return true;
         }
         return false;
+        // Time Complexity: O(N*N) where N is board size
     }
 }

@@ -1,6 +1,6 @@
-package lowleveldesign.pen;
+package lowleveldesign.designproblems.pen;
 
-import lowleveldesign.pen.strategy.write.WriteBehaviour;
+import lowleveldesign.designproblems.pen.strategy.write.WriteBehaviour;
 
 public class FountainPen extends Pen{
     private Refil refil;

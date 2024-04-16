@@ -1,4 +1,4 @@
-package lowleveldesign.tictactoe;
+package lowleveldesign.designproblems.tictactoe;
 
 public class Board {
     String[][] grid;

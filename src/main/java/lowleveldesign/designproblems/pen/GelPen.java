@@ -1,7 +1,7 @@
-package lowleveldesign.pen;
+package lowleveldesign.designproblems.pen;
 
-import lowleveldesign.pen.strategy.write.SmoothWriteBehaviour;
-import lowleveldesign.pen.strategy.write.WriteBehaviour;
+import lowleveldesign.designproblems.pen.strategy.write.SmoothWriteBehaviour;
+import lowleveldesign.designproblems.pen.strategy.write.WriteBehaviour;
 
 public class GelPen extends Pen implements RefillPen {
 

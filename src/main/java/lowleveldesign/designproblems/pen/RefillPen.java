@@ -1,4 +1,4 @@
-package lowleveldesign.pen;
+package lowleveldesign.designproblems.pen;
 
 public interface RefillPen {
     // 1. If we created it as an abstract class, there would be class explosion, GelRefillPen, GenNonRefillPen, GelRefillOtherFeaturePen

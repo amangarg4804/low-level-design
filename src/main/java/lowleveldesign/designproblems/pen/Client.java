@@ -1,4 +1,4 @@
-package lowleveldesign.pen;
+package lowleveldesign.designproblems.pen;
 
 public class Client {
     public static void main(String[] args) {

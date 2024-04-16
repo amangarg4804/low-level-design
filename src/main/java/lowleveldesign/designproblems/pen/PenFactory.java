@@ -1,4 +1,4 @@
-package lowleveldesign.pen;
+package lowleveldesign.designproblems.pen;
 
 public class PenFactory {
     public static GelPen.Builder createGelPen() {

@@ -1,7 +1,6 @@
-package lowleveldesign.tictactoe;
+package lowleveldesign.designproblems.tictactoe;
 
 import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 
 //https://github.com/amangarg4804/low-level-design-problem/blob/main/problems/01-tic-tac-toe.md
